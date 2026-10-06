@@ -1,61 +1,76 @@
-# Sales Prediction System
+# 📊 Sales Prediction System
 
-A Machine Learning based Sales Prediction System that predicts sales using product, category, region, quantity, price, discount, marketing spend, and date features.
+A machine learning web application that predicts product sales based on historical sales data, pricing, quantity, discounts, marketing spend, region, product category, and date-related features.
 
-## Tech Stack
+## 🚀 Features
 
-- Python
-- Pandas
-- NumPy
-- Scikit-learn
-- FastAPI
-- HTML
-- CSS
-- JavaScript
-- Render
+- Data cleaning and preprocessing
+- Exploratory Data Analysis (EDA)
+- Missing value and duplicate handling
+- Date feature engineering
+- One-hot encoding for categorical features
+- Multiple regression model comparison
+- Random Forest hyperparameter tuning
+- Overfitting analysis
+- Real-time predictions through FastAPI
+- Frontend and backend integration
+- Deployment using Render
 
-## ML Workflow
+## 🤖 Machine Learning
 
-- Data Cleaning
-- Exploratory Data Analysis
-- Feature Engineering
-- One-Hot Encoding
-- Train-Test Split
-- Model Comparison
-- Random Forest Hyperparameter Tuning
-
-## Models Used
+The following models were evaluated:
 
 - Linear Regression
-- Decision Tree
-- Random Forest
-- XGBoost
-- Tuned Random Forest
+- Decision Tree Regressor
+- Random Forest Regressor
+- XGBoost Regressor
+- Tuned Random Forest Regressor
 
-### Final Model
+### 🏆 Final Model
 
-**Tuned Random Forest**
+**Tuned Random Forest Regressor**
 
-- MAE: ₹33,363.97
-- RMSE: ₹68,549.66
-- R² Score: 0.823
+| Metric | Score |
+|---|---:|
+| MAE | ₹33,363.97 |
+| RMSE | ₹68,549.66 |
+| R² Score | 0.823 |
 
-## API
+The Random Forest model was tuned by controlling tree depth and minimum samples required for splitting and leaf nodes to reduce overfitting and improve generalization.
 
-FastAPI is used to serve real-time sales predictions.
+## 🛠️ Tech Stack
 
-### Endpoint
+**Machine Learning:** Python, Pandas, NumPy, Scikit-learn, XGBoost
 
-`POST /predict`
+**Backend:** FastAPI
 
-### Live Project
+**Frontend:** HTML, CSS, JavaScript
 
-Frontend: https://sales-frontend-w8u6.onrender.com
+**Deployment:** Render
 
-Backend: https://sales-backend-dil3.onrender.com
+## 🔄 ML Workflow
 
-## Run Locally
-
-```bash
-pip install -r requirements.txt
-uvicorn app:app --reload
+```text
+Dataset
+   ↓
+Data Cleaning
+   ↓
+EDA
+   ↓
+Feature Engineering
+   ↓
+One-Hot Encoding
+   ↓
+Train-Test Split
+   ↓
+Model Training
+   ↓
+Model Comparison
+   ↓
+Hyperparameter Tuning
+   ↓
+Final Random Forest Model
+   ↓
+FastAPI
+   ↓
+Frontend
